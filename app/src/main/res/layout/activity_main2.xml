@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MyParentTheme.MaxScreen"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    tools:context=".view.MainActivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+        <LinearLayout
+            android:orientation="vertical"
+            style="@style/MyParentTheme.MaxWidth">
+
+            <TextView
+                android:transitionName="nameTransition"
+                android:layout_marginTop="5dp"
+                android:id="@+id/textViewNameMeal"
+                style="@style/MyParentTheme.Text.Header"
+                android:text="Chicken Fried Rice" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                style="@style/MyParentTheme.MaxWidth"
+                android:layout_marginTop="5dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/textViewNutrition"
+                        style="@style/MyParentTheme.Text.Header"
+                        android:text="Nutritions" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        style="@style/MyParentTheme.MaxScreen">
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+                            <LinearLayout
+                                android:layout_width="170dp"
+                                android:elevation="5dp"
+                                android:padding="10dp"
+                                style="@style/MyParentTheme"
+                                android:background="@drawable/bg_border_title">
+                                <TextView
+                                    android:transitionName="caloTransition"
+                                    android:gravity="center"
+                                    android:elevation="5dp"
+                                    android:padding="5dp"
+                                    android:background="@drawable/bg_circle"
+                                    android:id="@+id/textViewKCalCalories"
+                                    style="@style/MyParentTheme.Text.Title"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="250" />
+                                <TextView
+                                    android:id="@+id/textViewCalories"
+                                    style="@style/MyParentTheme.Text.Title"
+                                    android:text="Calories" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+                            <LinearLayout
+                                android:layout_width="170dp"
+                                android:elevation="5dp"
+                                android:padding="10dp"
+                                style="@style/MyParentTheme"
+                                android:background="@drawable/bg_border_title">
+                                <TextView
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:gravity="center"
+                                    android:elevation="5dp"
+                                    android:padding="5dp"
+                                    android:background="@drawable/bg_circle"
+                                    android:id="@+id/textViewGamCarBo"
+                                    style="@style/MyParentTheme.Text.Title"
+                                    android:text="34" />
+                                <TextView
+                                    android:gravity="center"
+                                    android:id="@+id/textViewCarBo"
+                                    style="@style/MyParentTheme.Text.Title"
+                                    android:text="Carbo" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+                            <LinearLayout
+                                android:layout_width="170dp"
+                                android:elevation="5dp"
+                                android:padding="10dp"
+                                style="@style/MyParentTheme"
+                                android:background="@drawable/bg_border_title">
+                                <TextView
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:gravity="center"
+                                    android:elevation="5dp"
+                                    android:padding="5dp"
+                                    android:background="@drawable/bg_circle"
+                                    android:id="@+id/textViewGamProtein"
+                                    style="@style/MyParentTheme.Text.Title"
+                                    android:text="6" />
+                                <TextView
+                                    android:id="@+id/textViewProtein"
+                                    style="@style/MyParentTheme.Text.Title"
+                                    android:text="Protein" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1.2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:transitionName="imageTransition"
+                        android:id="@+id/circleImage"
+                        android:layout_marginEnd="-20dp"
+                        android:src="@drawable/hinhdemo"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/textViewTitleIngredients"
+                style="@style/MyParentTheme.Text.Header"
+                android:text="Ingredients" />
+
+            <TextView
+                android:id="@+id/textViewContentIngredients"
+                style="@style/MyParentTheme.Text"
+                android:layout_marginTop="5dp"
+                tools:text="1.5 pounds sliced Pork.\r\n1 package thin Rice Vermicelli.\r\n4-6 Egg Rolls.\r\n3 tablespoons minced Challots.\r\n1.5 tablespoons minced garlic Garlic.\r\n¼ cup Sugar.\r\n1 tablespoon Fish Sauce.\r\n½ tablespoon thick Soy sauce.\r\n½ tablespoon Pepper.\r\n3 tablespoons Olive Oil.\r\nSliced Cucumber.\r\nLeaves Mint.\r\nCrushed Peanuts.\r\n" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/textViewTitleRecipePreparation"
+                style="@style/MyParentTheme.Text.Header"
+                android:text="Recipe Preparation" />
+            <TextView
+                android:transitionName="instructionTransition"
+                android:layout_marginTop="5dp"
+                android:id="@+id/textViewContentRecipePreparation"
+                style="@style/MyParentTheme.Text"
+                tools:text="Slice the uncooked pork thinly, about ⅛. It helps to slightly freeze it (optional). \r\nMince garlic and shallots. Mix in a bowl with sugar, fish sauce, thick soy sauce, pepper, and oil until sugar dissolves.\r\nMarinate the meat for 1 hour, or overnight for better results.\r\nBake the pork at 375F for 10-15 minutes or until about 80% cooked. Finish cooking by broiling in the oven until a nice golden brown color develops, flipping the pieces midway.\r\nAssemble your bowl with veggies, noodles, and garnish. Many like to mix the whole bowl up and pour the fish sauce on top, but I like to make individual bites and sauce it slowly." />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        style="@style/MyParentTheme"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/bg_border_green">
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Watch video"
+            style="@style/MyParentTheme.Text.Title"/>
+    </LinearLayout>
+
+
+</FrameLayout>
